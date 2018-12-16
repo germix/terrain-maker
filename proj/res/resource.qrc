@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/tool-arrow.png</file>
+        <file>images/tool-point.png</file>
+        <file>images/file-exit.png</file>
+        <file>images/file-new.png</file>
+        <file>images/file-open.png</file>
+        <file>images/file-save.png</file>
+        <file>images/help-about.png</file>
+        <file>images/options-languages.png</file>
+        <file>MainImage.png</file>
+        <file>images/edit-bring-to-top.png</file>
+        <file>images/edit-down-level.png</file>
+        <file>images/edit-send-to-back.png</file>
+        <file>images/edit-up-level.png</file>
+        <file>images/action-clear.png</file>
+        <file>images/file-open_container_folder.png</file>
+        <file>images/file-close.png</file>
+        <file>images/options-toolbars.png</file>
+        <file>images/edit-size.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewDocumentDialog</class>
+ <widget class="QDialog" name="NewDocumentDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>605</width>
+    <height>252</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>New document</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblWidth">
+     <property name="text">
+      <string>Width:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="lblHeight">
+     <property name="text">
+      <string>Height:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="lblMiddlePath">
+     <property name="text">
+      <string>Middle terrain part:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="4">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="3">
+    <widget class="QToolButton" name="btnMiddlePart">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/file-open.png</normaloff>:/images/file-open.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="txtMiddlePart"/>
+   </item>
+   <item row="5" column="2">
+    <widget class="QLineEdit" name="txtRightPart"/>
+   </item>
+   <item row="5" column="3">
+    <widget class="QToolButton" name="btnRightPart">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/file-open.png</normaloff>:/images/file-open.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="lblRightPart">
+     <property name="text">
+      <string>Right terrain part:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lblLeftPart">
+     <property name="text">
+      <string>Left terrain part:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLineEdit" name="txtLeftPart"/>
+   </item>
+   <item row="3" column="3">
+    <widget class="QToolButton" name="btnLeftPart">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/file-open.png</normaloff>:/images/file-open.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="lblTerrainPart">
+     <property name="text">
+      <string>Filling terrain part:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QLineEdit" name="txtTerrainPart"/>
+   </item>
+   <item row="7" column="3">
+    <widget class="QToolButton" name="btnTerrainPart">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../res/resource.qrc">
+       <normaloff>:/images/file-open.png</normaloff>:/images/file-open.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="4">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2">
+    <widget class="QSpinBox" name="spinBoxHeight">
+     <property name="minimum">
+      <number>500</number>
+     </property>
+     <property name="maximum">
+      <number>16777215</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>500</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QSpinBox" name="spinBoxWidth">
+     <property name="minimum">
+      <number>500</number>
+     </property>
+     <property name="maximum">
+      <number>16777215</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>500</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>spinBoxWidth</tabstop>
+  <tabstop>spinBoxHeight</tabstop>
+  <tabstop>txtLeftPart</tabstop>
+  <tabstop>btnLeftPart</tabstop>
+  <tabstop>txtMiddlePart</tabstop>
+  <tabstop>btnMiddlePart</tabstop>
+  <tabstop>txtRightPart</tabstop>
+  <tabstop>btnRightPart</tabstop>
+  <tabstop>txtTerrainPart</tabstop>
+  <tabstop>btnTerrainPart</tabstop>
+  <tabstop>btnOk</tabstop>
+  <tabstop>btnCancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../res/resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnOk</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>295</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLeftPart</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>slotChooseFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnRightPart</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>slotChooseFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMiddlePart</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>slotChooseFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnTerrainPart</sender>
+   <signal>clicked()</signal>
+   <receiver>NewDocumentDialog</receiver>
+   <slot>slotChooseFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotChooseFile()</slot>
+ </slots>
+</ui>
